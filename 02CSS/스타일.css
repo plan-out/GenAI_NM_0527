@@ -1,0 +1,48 @@
+대상{속성:속성값; 속성:속성값;
+  속성:속성값 속성값 속성값;}
+
+body{background:#FFFFCC;}
+
+/*주석*/
+
+h1{
+  color:green;  /*글자색상*/
+  font-family:"궁서"; /*글자체(폰트)*/
+  font-size:50px; /*글자크기*/
+  border:3px solid blue;/*테두리*/
+}
+
+p{
+  background:white;
+  border:5px dashed #f00;
+  width:400px; /*너비*/
+  font-size:20px;
+  font-family:"돋움";
+  line-height:30px; /*행높이(줄간격)*/
+  letter-spacing:2px; /*자간(글자사이간격)*/
+  text-align:center; /*문자정렬*/
+  text-indent:50px; /*들여쓰기/내어쓰기*/
+  font-weight:bold; /*글자굵기조절*/
+}
+
+b{
+  font-weight:normal;
+  font-style:italic; /*글자 기울림*/
+  text-decoration:line-through;/*밑중,윗줄,취소선*/
+
+}
+
+/*
+  css3maker.com
+  enjoycss.com
+
+  [축약속성]
+  font:[스타일] [굵기] [크기]/[행높이] [폰트];
+*/
+
+i{
+  color:#f00;
+  font:italic bold 30px/40px "궁서";
+  text-transform:uppercase;
+  /*대소문자변환*/
+}

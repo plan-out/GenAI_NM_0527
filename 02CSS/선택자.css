@@ -1,0 +1,24 @@
+@charset "utf-8"; /*문자 인코딩 방식 표기*/
+
+/*
+  대상{속성:속성값; 속성:속성값;}
+
+  선택자 : 대상을 구성하는 요소
+*/
+
+/*태그선택자*/
+h1{font-size:40px; font-family:"궁서";
+  color:#f00;}
+div{border:5px solid #000;
+  width:300px; height:100px;
+  background:gray; color:white;} 
+  
+/*아이디선택자(#)*/
+#a{background:#cc0;}  
+#b{background:#c0c;}
+#c{background:#0cc;}
+
+/*클래스선택자(.)*/
+.ab{font-family:"돋움"; color:blue;
+  font-weight:bold;}
+.bc{font-size:30px; text-align:center;}  

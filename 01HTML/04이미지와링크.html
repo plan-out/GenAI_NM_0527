@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 이미지와 링크</title>
+</head>
+<body>
+  <h1>이미지삽입하기</h1>
+  <div style="border:10px solid red">
+    <h2>절대경로로 경로지정</h2>
+    <p>최상위폴더에서부터 위치를 지정해 나아가는 방식</p>
+    <img src="D:\김기환\웹수업\01HTML\강아지.jpg" width="200">
+    <img src="D:\김기환\웹수업\01HTML\로고\스타벅스.png" width="200">
+    <img src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/1dEO/image/CIieqAqy0KlR6UdFHxrc1NsGtVM.jpg" width="200">
+  </div>
+  <div style="border:10px solid blue">
+    <h2>상대경로로 경로지정</h2>
+    <p>현재 작성문서의 위치를 기준으로 지정해 나아가는 방식</p>
+    <img height="200" src="./강아지.jpg">
+    <img height="200" src="로고/스타벅스.png">
+    <img height="200" src="../고양이.jpg">
+  </div>
+  <hr>
+  <div>
+    <h2>링크태그 : 페이지연결하기</h2>
+    <a href="https://www.naver.com" target="_self">네이버</a>
+    <br>
+    <a href="https://www.naver.com" target="_blank"><img src="./로고/NaverBrand_Logotype.jpg"></a>
+    <br>
+    <a href="./03영역만들기.html">영역태그</a>
+  </div>
+
+</body>
+</html>

@@ -4,9 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>04 박스모델</title>
+  <style>
+    h1{background:#38af5d; width:300px;
+      height:100px; text-align:center;
+      color:#fff;}
+    
+    div{width:200px; height:100px;}
+
+    #aa{background:#ffc;}
+    #bb{background:#cfc;
+      border:10px solid #f00;
+      padding:10px;
+      margin:30px;}
+    #cc{background:#cff;
+      border:10px solid #000;
+      height:200px;
+      /*padding:20px 40px 60px 80px;*/
+      padding-top:20px;
+      padding-left:80px;
+      padding-right:40px;
+      padding-bottom:60px;
+      margin-top:60px;
+    }
+
+    img{width:200px; height:200px;}
+  </style>
 </head>
 <body>
   <h1>박스모델(p194)</h1>
   <p>:모든 태그는 네모난 box의 형태이다.</p>
+  <hr>
+  <div id="aa">box</div>
+  <div id="bb">box</div>
+  <div id="cc"><img src="../고양이.jpg" height="100"></div>
 </body>
 </html>

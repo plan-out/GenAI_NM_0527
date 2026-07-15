@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06 배경과 선</title>
+  <style>
+    div{width:200px; height:200px;
+      border:10px solid #000;
+      /*속성별로 분할작성*/
+      border-width:30px;
+      border-style:double;
+      border-color:aqua;
+      /*위치별로 분할작성*/
+      border-top:10px dotted red;
+      border-left:20px solid #0f0;
+      border-right:5px dashed #000;
+      /*위치-속성별로 분할작성*/
+      border-left-width:10px;
+      border-bottom-color:#ffc;
+
+      opacity:0.8;
+    }
+
+    body{
+      /*배경스타일(p213)*/  
+      height:2000px;
+      background-color:#cff;
+      background-image:url("./짱구.png");
+      background-repeat:no-repeat;
+      background-position:center 50px;
+      background-size:200px auto;
+      background-attachment:fixed;
+
+      /*
+      축약작성
+      background:[색상] url("주소") [수평위치] [수직위치]/[너비] [높이] [반복여부] [배치];
+      */
+      background:#fcc url("../고양이.jpg") center center/50% auto no-repeat fixed;
+    }
+
+  </style>
+</head>
+<body>
+  <div>선스타일(p201)</div>
+</body>
+</html>

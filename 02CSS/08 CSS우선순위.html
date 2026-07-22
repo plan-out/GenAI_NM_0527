@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08 CSS우선순위</title>
+  <style>
+    a{color:#fff; padding:10px 30px;}
+
+    #this{background:beige;}
+
+    .parent .child{background:violet;}
+
+    .grand h1 a{background:navy;}
+    h1 .child{background:brown;}
+    a.child{background:olive;}
+
+    .child{background:pink;}
+
+    div h1 > a{background:orange;}
+    div h1 a{background:magenta;}
+    h1 a{background:cyan;}
+
+    a{background:red !important;}
+    a{background:blue !important;}
+  </style>
+  <link rel="stylesheet" href="./우선순위.css">
+  <style>
+    a{background:yellow;}
+  </style>
+</head>
+<body>
+  <div class="grand">
+    <h1 class="parent">
+      <a id="this" class="child" style="background:gold;">CSS우선순위</a>
+    </h1>
+  </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07 대상의 구성방식</title>
+  <style>
+    /*모든태그에 스타일을 적용*/
+    *{border:1px solid #000; margin:0;}
+
+    /*복수대상(그룹) : 다수의 태그를 지정*/
+    h1, h3, h4{background:#F00; color:#fff; 
+      font-size:30px;}
+
+    /*위치적 조건부여(조상-자손)*/  
+    #wrap div{border:10px solid #00f; margin:20px;}
+    #wrap div p{font-size:20px; color:#0f0; line-height:30px;}
+  
+    /*위치적 조건부여(부모-자식)*/
+    #wrap > p{text-decoration:underline #0f0; font-size:30px;}
+
+    /*바로 다음에 오는 형제요소*/
+    h3 + p{font-weight:bold; text-align:center}
+
+    /*뒤에 오는(밑에 있는) 모든 형제요소*/
+    h4 ~ p{font-style:italic; text-align:center;}
+
+    /*하나의 대상을 정밀하게 선택*/
+    h1#this.abc.def{font-size:50px; background:gold;}
+  </style>
+</head>
+
+<body>
+  <h1 id="this" class="abc def">대상의 구성방식(p149)</h1>
+  <div id="wrap">
+    <p>:CSS에서 선택자를 조합하여 대상을 구성하는 방식</p>
+    <div>
+      <h3>h3 제목</h3>
+      <p>첫번째 영역의 문단</p>
+      <p>첫번째 영역의 문단</p>
+      <p>첫번째 영역의 문단</p>
+    </div>
+    <div>
+      <p>두번째 영역의 문단</p>
+      <h4>h4 제목</h4>
+      <p>두번째 영역의 문단</p>
+      <p>두번째 영역의 문단</p>
+    </div>
+  </div>
+</body>
+
+</html>

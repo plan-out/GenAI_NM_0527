@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11 Float 사용하기</title>
+  <style>
+    p{border:5px solid #000;
+      width:100px; height:100px;
+      float:right; margin:0;}
+    /*가상클래스*/  
+    p:first-child{background:#f00;}  
+    p:last-child{background:#00f;}
+    p:nth-child(3){background:#0f0;}
+    p:nth-child(even){background:#ff0;}
+    p:nth-child(2n+3){color:#fff;}
+    /* 
+    even:짝수번째 / odd:홀수번째 
+    5n : 5의 배수 (5,10,15,20,...)
+    3n+1 : 1부터 3씩 증가되는 순번  
+        (1,4,7,10, ...)    
+    */
+
+    div{border:10px solid #00f;
+      background:#ccf;
+      width:500px; height:300px;
+      clear:both;}
+  </style>
+</head>
+<body>
+  <p>문단태그</p>
+  <p>문단태그</p>
+  <p>문단태그</p>
+  <p>문단태그</p>
+
+  <div id="parent">
+    영역태그
+  </div>
+</body>
+</html>

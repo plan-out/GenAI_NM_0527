@@ -1,1 +1,34 @@
-13 포지션학습하기.html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13 포지션학습하기</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>포지션(position) 속성 학습하기(p223)</h1>
+  <p>:위치를 지정하는 방식(기준)을 설정하는 속성</p>
+  <div>
+    <h3>속성값</h3>
+    <dl>
+      <dt>:static(기본값)</dt>
+        <dd>block요소는 수직하게, inline요소는 수평하게 나열되는
+          방식</dd>
+      <dt>:absolute</dt>    
+        <dd>상위포지션을 기준하여 위치가 지정되고,
+          상위포지션이 없는 경우, 화면을 기준하여 위치가 지정됨</dd>  
+      <dt>:relative</dt>    
+        <dd>현 위치를 기준하여 위치가 지정된다.
+          주로, 상위포지션의 용도로 많이 사용된다.</dd>  
+      <dt>:fixed</dt>    
+        <dd>화면을 기준하여 위치가 지정되고, 화면에 고정됨.</dd>  
+      <dt>:sticky</dt>    
+        <dd>상위포지션을 기준하여 위치가 지정되고,
+          임계값이 넘어가면, 화면에 고정된다.</dd>  
+    </dl>
+    <p>※위치를 지정하는 속성: top, left, right, bottom</p>
+    <p>※겹쳐진 영역의 순서 지정 속성: z-index</p>
+  </div>
+</body>
+</html>

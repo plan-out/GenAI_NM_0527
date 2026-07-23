@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14 포지션 예시</title>
+  <style>
+    body{height:3000px;}
+
+    div{width:130px; height:60px;
+      border:1px solid #000; 
+      background:#999;
+      color:#fff; font-weight:bold;}
+
+    #a02{background:#f00;
+      position:fixed; z-index:-1;
+      top:20px; left:40px;}  
+
+    #a04{background:#0f0;
+      position:absolute; z-index:2;
+      top:40px; left:80px;} 
+
+    #a06{background:#00f;
+      position:absolute; z-index:1;
+      top:60px; left:120px;}  
+
+    #a08{background:#ff0;
+      position:relative;
+      top:20px; left:40px;}  
+
+    #a10{background:#0ff;
+      position:sticky;
+      top:20px; left:40px;}
+  </style>
+</head>
+<body>
+  <div id="a01">01</div>
+  <div id="a02">02.fixed</div>
+  <div id="a03">03</div>
+  <div id="a04">04.absolute</div>
+  <div id="a05">05</div>
+  <div id="a06">06.absolute</div>
+  <div id="a07">07</div>
+  <div id="a08">08.relative</div>
+  <div id="a09">09</div>
+  <div id="a10">10.sticky</div>
+  <div id="a11">11</div>
+</body>
+</html>

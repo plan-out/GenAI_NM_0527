@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+body{
+  background:#f8f9fa;
+  color:#333;
+  padding:40px;
+}
+
+h1{font-size:24px; 
+  color:#111; margin-bottom:8px;}
+
+body > p{color:#666;
+  margin-bottom:24px;}  
+
+div{
+  background:#fff; padding:24px;
+  border:1px solid #e9ecef;
+  max-width:600px;/*최대 너비 제한*/
+  border-radius:12px;
+  box-shadow:0 4px 12px #0001;/*그림자*/
+  /* :수평위치 수직위치 [블러] [크기] 색상; */
+}
+
+h3{margin-top:0; font-size:18px;
+  color:#212529;
+  border-bottom:2px solid #e9ecef;
+  padding-bottom:8px;}
+
+dl{margin:16px 0 0 0;}  
+
+dt{font-weight:bold;
+  color:#2b6cb0;
+  font-size:16px;
+  margin-top:12px;}
+
+dd{margin-left:0; margin-top:4px;
+  background:#f7fafc;
+  color:#4a5568;
+  padding:10px 14px;
+  line-height:1.8;/*단위가 없으면, 글자크기의 배수로 적용*/}  

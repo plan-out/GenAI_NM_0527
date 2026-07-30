@@ -1,0 +1,113 @@
+@charset "utf-8"; /*문자인코딩 정보표기*/
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+/*리셋코드:모든태그의 기본값을 0으로 설정하거나 동일하게 함.*/
+*{padding:0; margin:0;}
+li{list-style:none;}
+
+#benefit{
+  width:1400px; padding:100px 0; margin:0 auto;
+  font-family: 'Pretendard'; line-height:1.4;
+  position:relative;}
+
+#benefit .title h2{font-family: "Cormorant Garamond", serif;
+  font-size:48px; color:#111; font-weight:600;
+  display:inline-block; margin-right:14px;}
+#benefit .title h3{
+  font-size:24px; color:#111; font-weight:500;
+  display:inline-block;}
+#benefit .title p{
+  font-size:18px; color:#444;}  
+
+#benefit .content{margin-top:32px;}  
+#benefit .content ul{height:308px;} 
+#benefit .content li{background:#f5f5f5;
+  width:calc((100% - 20px * 4) / 5); height:308px;
+  float:left; margin-right:20px; padding:55px 16px;
+  box-sizing:border-box;/*테두리영역까지 크기조절됨.*/
+  text-align:center; transition:all .4s;}  
+#benefit .content li:last-child{margin-right:0;}  
+#benefit .content li:hover{background:#dee9de;
+  transform:translateY(-10px);
+  box-shadow:0 8px 12px 4px #0002;}
+
+#benefit .content li i{display:inline-block; 
+  margin:8px 8px 16px;}
+#benefit .content li img{width:72px;}  
+#benefit .content li h4{font-size:24px; color:#111;
+  line-height:40px; font-weight:600;}  
+#benefit .content li p{font-size:18px; color:#444;
+  line-height:30px;}
+#benefit .content li strong{color:#816c58; font-weight:600;} 
+
+#benefit .btns{position:absolute; top:145px; right:0;}
+#benefit .btns a{display:inline-block; margin-left:32px;
+  font-size:18px; line-height:46px; color:#111;
+  text-decoration:none;}
+#benefit .btns span{float:left;}
+#benefit .btns i{display:inline-block; width:44px;
+  height:44px; border:1px solid #111; 
+  border-radius:50%; float:left; margin-left:16px;
+  background:url("./images/arrow.svg") center center/20px 20px no-repeat;}

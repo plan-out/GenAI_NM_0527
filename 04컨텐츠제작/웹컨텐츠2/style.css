@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/*리셋코드*/
+*{margin:0; padding:0;}
+li{list-style:none;}
+
+body{background:#f6f6f6;
+  font-family: "Noto Sans KR", sans-serif;}
+
+header{background:#fff;} 
+header .inner{width:1200px; height:70px; margin:0 auto;}
+  
+header h1{font-size:24px; color:#333; float:left;
+  font-family: "Emilys Candy", serif;
+  line-height:70px;}
+header p{float:right; padding:25px 0;}  
+header ul{float:right;}  
+header li{float:left; font-size:16px;
+  font-weight:bold; color:#333;
+  line-height:70px; margin-right:40px;}

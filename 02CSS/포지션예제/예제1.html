@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>예제1</title>
+    <style>
+    *{margin:0; padding:0;}
+    img{vertical-align:top;}
+
+    body{height:100vh; position:relative;
+		background:url("img1/chicken.png") no-repeat right top 
+    fixed #F5EDE3 ;}
+
+    #face{width:331px; height:283px;
+      border:1px solid #000;
+      background:url("./img1/face.png");
+      margin:300px auto; position:relative;
+      transition:all 0.6s;
+    }
+
+    #eye{position:absolute; top:130px; left:94px;}
+    #hair{position:absolute; top:-120px; left:100px;}
+    #beak{position:absolute; top:140px; left:130px;}
+    #poc{position:absolute; top:163px; left:146px;
+      transition:all .6s; transform-origin:center top;}
+    #flush{position:absolute; top:163px; left:77px;}
+
+    /*가상클래스(:hover) : 마우스를 올렸을 때*/
+    #face:hover{
+      transform:scale(1.2,0.8) translateY(80px);}
+    
+    #face:hover #poc{
+      transform:rotate(360deg);
+    }
+    </style>
+  </head>
+  <body>
+    <div id="face">
+      <p id="eye"><img src="./img1/eye.png" alt="눈"></p>
+      <p id="hair"><img src="./img1/hair.png" alt="벼슬"></p>
+      <p id="poc"><img src="./img1/poc.png" alt="수염"></p>
+      <p id="beak"><img src="./img1/beak.png" alt="부리"></p>
+      <p id="flush"><img src="./img1/flush.png" alt="홍조"></p>     
+    </div>
+  </body>
+</html>

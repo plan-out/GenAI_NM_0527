@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>예제2</title>
+    <style>
+    *{margin:0; padding:0;}
+    img{vertical-align:top;}
+
+    body{background:url("img2/dog.png") no-repeat right top #F5EDE3;}
+    div{outline:1px solid #000;}
+    #face{width:554px; margin:200px auto 0;
+      height:462px; position:relative;}
+
+    #face p{position:absolute;}  
+    #ear_left{top:-105px; left:20px; z-index:-1;
+      transform-origin:right bottom;}
+    #ear_right{top:-105px; right:20px; z-index:-1;}  
+    #jaw{bottom:0; left:9px;}
+    #eye_left{top:230px; left:125px;}
+    #eye_right{top:230px; right:125px;}
+    #flush_left{top:275px; left:120px;}
+    #flush_right{top:275px; right:120px;}
+    #mouth{top:260px; left:244px;}
+    #nose{top:230px; left:240px;}
+    #shadow{bottom:0; right:0;}
+
+    /*애니메이션효과(p250)*/
+    @keyframes move{
+      /*from(시작키프레임), to(종료키프레임)*/
+      from{top:0; transform:scale(1.08,0.98);}
+      to{top:-80px; transform:scale(0.98,1.02);}
+    }  
+
+    #face{
+      animation-name:move;  /*진행할 애니메이션효과 지정*/
+      animation-duration:1s;  /*재생시간*/
+      animation-iteration-count:infinite;  /*반복횟수(infinite:무한반복)*/
+      animation-direction:alternate; /*재생방향*/
+      animation-delay:2s; /*대기시간*/ 
+      animation-fill-mode:both;
+    }
+
+    #face:hover{
+      animation-play-state:paused;
+      /*재생상태 : running(재생중), paused(일시정지)*/
+    }
+
+    @keyframes left_motion{
+      0%{transform:rotate(0deg);}
+      10%{transform:rotate(-10deg);}
+      20%{transform:rotate(0deg);}
+      30%{transform:rotate(-10deg);}
+      40%{transform:rotate(0deg);}
+      100%{transform:rotate(0deg);}
+    }
+    #ear_left{
+      animation:left_motion 3s infinite;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div id="face">
+      <h2><img src="./img2/face.png" alt="얼굴"></h2>
+      <p id="ear_left"><img src="./img2/ear_left_out.png" alt="귀왼쪽"></p>
+      <p id="ear_right"><img src="./img2/ear_right_out.png" alt="귀오른쪽"></p>
+      <p id="jaw"><img src="./img2/jaw.png" alt="턱"></p>
+      <p id="eye_left"><img src="./img2/eye_left.png" alt="눈왼쪽"></p>
+      <p id="eye_right"><img src="./img2/eye_right.png" alt="눈오른쪽"></p>
+      <p id="flush_left"><img src="./img2/flush_left.png" alt="홍조왼쪽"></p>
+      <p id="flush_right"><img src="./img2/flush_right.png" alt="홍조오른쪽"></p>
+      <p id="mouth"><img src="./img2/mouth.png" alt="입"></p>
+      <p id="nose"><img src="./img2/nose.png" alt="코"></p>
+      <p id="shadow"><img src="./img2/shadow.png" alt="그림자"></p>
+    </div>
+  </body>
+</html>

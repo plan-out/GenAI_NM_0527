@@ -18,3 +18,27 @@ header ul{float:right;}
 header li{float:left; font-size:16px;
   font-weight:bold; color:#333;
   line-height:70px; margin-right:40px;}
+
+#class{
+  width:1200px; margin:0 auto; padding:70px 0 90px;}  
+#class h2{font-size:40px; color:#333; font-weight:900;}
+#class > p{font-size:15px; color:#333; margin:16px 0 50px;}
+#class li{width:calc((100% - 120px) / 4);
+  background:#fff; border-radius:16px;
+  overflow:hidden; box-shadow:0 4px 30px #ccc8;}
+#class .info{padding:20px; position:relative;}  
+#class .img img{width:100%;}  
+#class .country{font-size:13px; color:#999; font-weight:600;}
+#class h3{font-size:16px; color:#333; margin:8px 0 20px;}
+#class hr{border:0.5px solid #efefef;}
+#class .price{font-size:16px; font-weight:900;
+  margin-top:10px;}
+#class .bookmark{position:absolute; top:20px; right:20px;
+  padding:4px 4px 0px; background:#eee; 
+  border-radius:6px;}  
+
+#class li .flag{display:inline-block;
+  width:16px; height:16px; margin-left:4px;
+  vertical-align:-2px;/*글자와 수직정렬위치*/
+  background-image:url("./images/flag_.png");
+  background-size:16px auto;}

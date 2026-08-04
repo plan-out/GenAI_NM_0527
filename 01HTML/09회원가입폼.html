@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>09회원가입폼</title>
+  <style>
+    body{background:#ddd;}
+    section{width:400px; margin:50px auto;
+      padding:30px; line-height:36px;
+      background:#fff; border-radius:30px;
+      box-shadow:0 10px 30px #0005;}
+    p{margin:0;}
+  </style>
+</head>
+<body>  
+  <section>
+    <h2>회원가입</h2>
+    <form action="회원가입 시스템 주소">
+      <fieldset>
+        <legend>기본정보</legend>
+        <label for="id">아이디 : </label>
+        <input type="text" id="id">
+        <button>중복확인</button>
+        <br>  
+        <label for="pw">비밀번호 : </label>
+        <input type="password" id="pw">
+        <br>
+        <label for="re">비밀번호확인 : </label>
+        <input type="password" id="re">
+        <br>
+        <label for="em">이메일 : </label>
+        <input type="email" id="em"
+          placeholder="예)ezen@naver.com">
+        <select>
+          <option>직접입력</option>
+          <option>네이버</option>
+          <option>구글</option>
+          <option>카카오</option>
+        </select>
+      </fieldset>  
+      <fieldset>
+        <legend>추가정보</legend>
+        <p>성별</p>
+        <label><input type="radio" name="gender">남자</label>
+        <label><input type="radio" name="gender">여자</label>
+        <br>
+        <p>관심분야</p>
+        <label><input type="checkbox">독서</label>
+        <label><input type="checkbox">여행</label>
+        <label><input type="checkbox">영화</label>
+        <label><input type="checkbox">운동</label>
+        <label><input type="checkbox">음악</label>
+        <br>
+        <label for="comment">가입인사</label><br>
+        <textarea id="comment" cols="30" rows="6"></textarea>
+      </fieldset>
+      <p>
+        <button type="submit">회원가입</button>
+        <button type="reset">취소</button>
+      </p>
+    </form>
+  </section>  
+</body>
+</html>

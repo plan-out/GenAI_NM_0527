@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07표만들기(p98)</title>
+  <style>
+    table {
+      border: 1px solid #000;
+      width: 400px;
+    }
+
+    th,
+    td {
+      border: 1px solid #f00;
+    }
+
+    caption {
+      display: none;
+    }
+
+    .name{background:#ccf;;}
+  </style>
+</head>
+
+<body>
+  <div>
+    <h2>성적표</h2>
+    <table>
+      <colgroup span="2" class="name">
+        <col style="width:30px">
+        <col style="background:#ffc;">  
+      </colgroup>
+      <col span="2" style="background:#cfc">
+      <col style="background:#fcc">
+      <caption>1학기 성적표</caption>
+      <thead><!--제목행 그룹-->
+        <tr>
+          <th scope="col">반</th>
+          <th scope="col">이름</th>
+          <th scope="col">국어</th>
+          <th scope="col">영어</th>
+          <th scope="col">수학</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th colspan="2" scope="row">합계</th>
+          <td>265</td>
+          <td>250</td>
+          <td>220</td>
+        </tr>
+      </tfoot>
+      <tbody><!--내용행 그룹-->
+        <tr>
+          <td rowspan="3">A</td>
+          <th scope="row">일월</th>
+          <td>100</td>
+          <td>90</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>이월</td>
+          <td>70</td>
+          <td>60</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>삼월</td>
+          <td>95</td>
+          <td>100</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+      <tbody><!--내용행 그룹-->
+        <tr>
+          <td rowspan="3">B</td>
+          <td>사월</td>
+          <td>100</td>
+          <td>90</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>오월</td>
+          <td>70</td>
+          <td>60</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>유월</td>
+          <td>95</td>
+          <td>100</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

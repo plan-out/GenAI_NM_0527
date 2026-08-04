@@ -20,12 +20,25 @@ header li{float:left; font-size:16px;
   line-height:70px; margin-right:40px;}
 
 #class{
+  position:relative;
   width:1200px; margin:0 auto; padding:70px 0 90px;}  
 #class h2{font-size:40px; color:#333; font-weight:900;}
 #class > p{font-size:15px; color:#333; margin:16px 0 50px;}
-#class li{width:calc((100% - 120px) / 4);
+
+#class .filter{position:absolute; top:120px; right:0;
+  background:#444; border-radius:6px; color:#fff;
+  font-size:15px; font-weight:bold; padding:8px 16px;
+  text-decoration:none;}
+#class .filter img{vertical-align:-6px;}  
+
+
+#class ul{display:flex; flex-wrap:wrap; gap:40px;}
+
+#class li{width:calc((100% - 120px) / 4);}
+#class .box{
   background:#fff; border-radius:16px;
   overflow:hidden; box-shadow:0 4px 30px #ccc8;}
+  
 #class .info{padding:20px; position:relative;}  
 #class .img img{width:100%;}  
 #class .country{font-size:13px; color:#999; font-weight:600;}
@@ -42,3 +55,17 @@ header li{float:left; font-size:16px;
   vertical-align:-2px;/*글자와 수직정렬위치*/
   background-image:url("./images/flag_.png");
   background-size:16px auto;}
+#class li:nth-child(2) .flag{background-position:0 calc(-16px * 2);}  
+#class li:nth-child(3) .flag{background-position:0 calc(-16px * 6);}  
+#class li:nth-child(4) .flag{background-position:0 calc(-16px * 3);}  
+#class li:nth-child(5) .flag{background-position:0 calc(-16px * 4);}  
+#class li:nth-child(6) .flag{background-position:0 calc(-16px * 1);}  
+#class li:nth-child(7) .flag{background-position:0 calc(-16px * 8);}  
+#class li:nth-child(8) .flag{background-position:0 calc(-16px * 11);}  
+
+
+#class ul li{transition:all .4s; perspective:1000px;}
+#class ul li .box{transition:all .4s;}
+#class ul:hover li{opacity:0.6;}
+#class ul li:hover{opacity:1;}
+#class ul li:hover .box{transform:rotateY(360deg)}

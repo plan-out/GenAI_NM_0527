@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+
+body{
+  height:100vh;/*vh:화면높이의 비 vw:화면너비의 비*/
+  background:
+    url("./images/bg.png") center no-repeat,
+    url("./images/bg-pattern.png") center;
+  display:flex;
+  justify-content:center; /*메인축 = 수평정렬*/  
+  align-items:center; /*교차축 = 수직정렬*/
+  font:13px/1.5 "Nanum Gothic";
+}
+
+#signUp{width:500px; min-height:390px;
+  border:1px solid #ddd; border-radius:9px;
+  box-shadow:inset 0 0 6px #ddd;
+  background:#f2f2f288;
+  background:linear-gradient(90deg, #f2f2f2,#fff 10px,#f4f4f466 80%);
+}
+
+#signUp h2{
+  font-family: "Bitcount Prop Single", system-ui;
+  margin:15px 20px; font-size:24px; line-height:1.8;
+  font-weight:300; border-bottom:1px solid #ddd;
+}
+#signUp form{margin:15px 20px;}
+#signUp p{margin-bottom:10px;}
+
+#signUp label:not([for="accept"]){display:none;}
+
+#signUp input:not(#accept){width:15em; 
+  padding:1em 0.5em 1em 2.5em;
+  border:1px solid #ccc; border-radius:5px;
+  box-shadow:inset 0 0 4px #ddd;
+  background:#f8f8f8 url("./images/u_icons_splite.png") 
+    no-repeat 5px 7px;
+  outline:none;  
+  transition:all .4s;
+}
+
+/*폼요소가 선택되었을 때*/
+#signUp input:not(#accept):focus{
+  width:17em; background-color:#fff; border-color:#7ccbe8;
+}
+
+#signUp #name{background-position:5px 7px;}
+#signUp #name:focus{background-position:5px -21px;}
+#signUp #phone{background-position:5px -49px;}
+#signUp #phone:focus{background-position:5px -78px;}
+#signUp #email{background-position:5px -104px;}
+#signUp #email:focus{background-position:5px -132px;}
+#signUp #site{background-position:5px -160px;}
+#signUp #site:focus{background-position:5px -188px;}
+#signUp #pass{background-position:5px -217px;}
+#signUp #pass:focus{background-position:5px -245px;}

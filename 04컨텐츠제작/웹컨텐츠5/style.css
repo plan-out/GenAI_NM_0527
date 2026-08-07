@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+
+body{height:100vh; background:#0b0810;
+  font-family:'Pretendard';}
+
+main{height:100%; display:flex;
+  justify-content:center;
+  align-items:center;}
+
+#accordion{width:90%; height:50%;
+  display:flex; gap:0.6%;
+  border:5px solid #ff0;}
+
+#accordion input{display:none;}
+#accordion label{background:#fff;
+  display:block; width:11%;
+  border-radius:12px;
+  transition:all .3s;}  
+  
+#accordion input:checked + label{
+  flex-grow:1; /*flex에 의해 자동으로 조절되어 커지는 비율*/
+}  
+
+#accordion .img{width:100%; height:100%;
+  overflow:hidden;}
+
+#accordion .img p{width:100%; height:100%;}
+
+#accordion .img img{width:100%; height:100%;
+  object-fit:cover;}  

@@ -18,6 +18,7 @@ body{
   box-shadow:inset 0 0 6px #ddd;
   background:#f2f2f288;
   background:linear-gradient(90deg, #f2f2f2,#fff 10px,#f4f4f466 80%);
+  position:relative;
 }
 
 #signUp h2{
@@ -26,7 +27,7 @@ body{
   font-weight:300; border-bottom:1px solid #ddd;
 }
 #signUp form{margin:15px 20px;}
-#signUp p{margin-bottom:10px;}
+#signUp p{margin-bottom:16px;}
 
 #signUp label:not([for="accept"]){display:none;}
 
@@ -45,13 +46,41 @@ body{
   width:17em; background-color:#fff; border-color:#7ccbe8;
 }
 
-#signUp #name{background-position:5px 7px;}
-#signUp #name:focus{background-position:5px -21px;}
-#signUp #phone{background-position:5px -49px;}
-#signUp #phone:focus{background-position:5px -78px;}
-#signUp #email{background-position:5px -104px;}
-#signUp #email:focus{background-position:5px -132px;}
-#signUp #site{background-position:5px -160px;}
-#signUp #site:focus{background-position:5px -188px;}
-#signUp #pass{background-position:5px -217px;}
-#signUp #pass:focus{background-position:5px -245px;}
+#signUp input#name{background-position:5px 7px;}
+#signUp input#name:focus{background-position:5px -21px;}
+#signUp input#phone{background-position:5px -49px;}
+#signUp input#phone:focus{background-position:5px -78px;}
+#signUp input#email{background-position:5px -104px;}
+#signUp input#email:focus{background-position:5px -132px;}
+#signUp input#site{background-position:5px -160px;}
+#signUp input#site:focus{background-position:5px -188px;}
+#signUp input#pass{background-position:5px -217px;}
+#signUp input#pass:focus{background-position:5px -245px;}
+
+#signUp input + span{color:#f00; font-weight:bold;
+  display:none;}
+#signUp input[required] + span{display:inline;}  
+
+#signUp #accept{vertical-align:-2px;}
+#signUp label[for="accept"] a{color:#31a8d7;
+  text-decoration:none;}
+
+#signUp #btn{position:absolute; top:140px; right:40px;
+  width:140px; height:140px; border-radius:50%;
+  background:linear-gradient(-35deg,#fff 10%,#e0e0e0 51%);
+  border:1px solid #cfcfcf;
+  outline:2px solid #c3d4db;}  
+#signUp #btn button{width:120px; height:120px; margin:10px;
+  border-radius:50%; border:3px solid #fff;
+  background:linear-gradient(-35deg, #7c7c7c 5%,
+    #454545 30%, #1f1f1f 50%, #000 51%);
+  color:#f00; text-indent:-9999px; overflow:hidden;}  
+
+#signUp #btn button:hover{cursor:pointer;
+  box-shadow:0 0 20px #00c3ff88;}
+
+#signUp #btn button::after{content:"+"; font-weight:900;
+  position:absolute; top:33px; left:54px; text-indent:0;
+  font-size:50px; color:#222;
+  text-shadow:1px 1px #fff4;}  
+

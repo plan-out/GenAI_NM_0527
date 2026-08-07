@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{margin:0; padding:0;}
+
+body{height:100vh;
+  font-family:"Lato","Hahmlet";
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:url("./images/wood_bg.jpg")}
+
+#tab{border:2px solid #f00;}
+
+#tab h1{color:#fff; font-weight:normal;
+  font-size:36px; text-align:center;
+  text-shadow:0 2px #000;}
+#tab h2{color:#fff; font-weight:normal;
+  font-size:14px; text-align:center;
+  text-shadow:0 2px #000;
+  letter-spacing:8px;}  
+
+#tab_contents{margin-top:40px; 
+  font-size:16px; color:#568;}  
+
+#tab_contents label{background:#e5e9ea;
+  padding:0.6em 1.5em;
+  display:inline-block;
+  border-radius:6px 6px 0 0; 
+  position:relative; transition:all .4s;
+  line-height:1; cursor:pointer;}
+
+#tab_contents input:checked + label,  
+#tab_contents label:hover{background:#f9f9f9;
+  padding-left:2.2em; padding-right:0.8em;
+  box-shadow:0 -4px 10px #0003;}
+
+#tab_contents label img{position:absolute; top:7px;
+  left:16px; opacity:0; transition:all .4s;}  
+ 
+#tab_contents input:checked + label img,  
+#tab_contents label:hover img{opacity:1; left:8px;}  
+
+#tab_contents input{display:none;}
+
+#tab_contents .contents{max-width:650px;}
+
+#tab_contents .contents div{background:#f9f9f9;
+  padding:20px; display:none;}
+
+#tab_contents #t1:checked ~ .contents #c1,
+#tab_contents #t2:checked ~ .contents #c2,
+#tab_contents #t3:checked ~ .contents #c3,
+#tab_contents #t4:checked ~ .contents #c4,
+#tab_contents #t5:checked ~ .contents #c5{display:block;}
+
+#tab_contents .contents .img{float:left; margin-right:10px;}
+#tab_contents .contents h3{font-size:20px; color:#000;
+  margin-bottom:10px;}

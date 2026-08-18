@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+/*리셋코드*/
+*{margin:0; padding:0;}
+li{list-style:none;}
+
+html{
+  font:14px/1.5 "Georgia";
+} 
+
+header{
+  width:100%; position:absolute; z-index:100;
+  .inner{display:flex; justify-content:space-between;
+    max-width:1200px; margin:0 auto;}
+  #logo{
+    width:194px; height:194px; margin:94px 0 0 -22px;
+    a{display:block; width:100%; height:100%;
+      background:url("../images/header-brand-logo.png") no-repeat;
+      border-radius:50%; transition:all .4s;
+      text-indent:-9999px; overflow:hidden;
+      position:relative;}
+    a:hover{background-color:#0002;}
+    a::before{content:""; width:17px; height:17px;
+      background:url("../images/header-brand-star.png");
+      position:absolute; top:50px; left:88.5px;
+      transition:all .4s;}
+    a:hover::before{top:35px; transform:rotate(360deg);}  
+  }//e:#logo
+  #gnb{
+    margin-top:35px;
+    ul{display:flex; gap:35px;}
+    li{position:relative;}
+    a{color:#202821; font-size:16px; text-decoration:none;
+      text-shadow:0 1px #b3b3b3; transition:all .4s;}
+    li:hover a{color:#fff; text-shadow:none;}
+    .sub{
+      position:absolute; display:none; white-space:nowrap;
+      li{background:#fffa; padding:4px 20px 4px 8px;
+        margin-bottom:2px;}
+      a{color:#666 !important; font-size:14px;}
+      a:hover{text-decoration:underline;}
+    }//e:.sub
+    li:hover .sub{display:block;}
+  }//e:#gnb
+}//end:header
+
+#main_view{
+  background:url("../images/header-bg.jpg") no-repeat center;
+  background-size:cover;
+  .inner{
+    max-width:1200px; margin:0 auto;
+    height:58.3vw; max-height:700px;
+    position:relative;}
+  h2{position:absolute; bottom:100px; right:60px;
+    font-size:60px; color:#fff; line-height:1.2;
+    text-align:right; text-shadow:2px 2px 2px #0002;}  
+}//e:#main_view
+
+
+#side_bar{
+  position:absolute; width:100%; height:45px;
+  margin-top:-45px; background:#2226; color:#fff;
+  .inner{max-width:1200px; margin:0 auto; height:100%;
+    position:relative;}
+  h1{position:absolute; top:5px; left:-45px;}  
+  p{line-height:45px; letter-spacing:0.3px;}
+}//e:#side_bar
+
+main{
+  h3.title{margin-top:5%; font-size:24px; color:#b2765d;
+  margin-bottom:1.6%; padding-bottom:1.6%;
+  border-bottom:1px solid #e1dcda;}
+}
+
+#sec1{
+  max-width:1200px;  margin:0 auto;
+  ul{display:flex; gap:3.2%;}
+  img{width:100%; border:1px solid #e0e0e0;}
+}//e:#sec1
+
+#sec2{
+  max-width:1200px; margin:0 auto;
+  .contents{display:grid; gap:3.2%; 
+    grid-template-columns:31.2% auto;
+    margin-bottom:5%; line-height:1.6;}
+  img{width:100%; border:1px solid #e0e0e0;}
+  .contents:last-child{
+    .img{order:2}
+    div{order:1}
+  }
+  h4{font-size:22px; margin-bottom:30px;}
+  p{font-size:14px; color:#818181;}
+}
+
+#sec3{
+  max-width:1200px; margin:0 auto;
+  ul{display:grid; grid-template-columns:22.6% 22.6% auto;
+    gap:3.2%; margin-bottom:5%; line-height:1.6;}
+  img{width:100%; border:1px solid #e0e0e0;}  
+  h4{font-size:22px; margin-bottom:30px;}
+  p{font-size:14px; color:#818181;}
+}
+
+footer{
+  border-top:1px solid #e2e2e2; padding:20px 0;
+  .inner{max-width:1200px; margin:0 auto;}
+  address{padding:40px 0; font-size:75%; line-height:1.4;
+    background:url("../images/footer-logo.png") 100% 50% no-repeat;
+    font-style:normal;}
+  strong{font-width:bold;}  
+  a{color:#606060; text-decoration:none;}
+}
+
+/*화면너비가 1280px이하에서 적용*/
+@media (max-width:1280px){
+  header .inner,
+  #main_view .inner,
+  #side_bar .inner,
+  #sec1, #sec2, #sec3,
+  footer .inner{width:93.75%;}
+  #main_view h2{font-size:5vw;}
+}
+
+/*화면너비가 1024px이하에서 적용(태블릿)*/
+@media (max-width:1024px){
+  header{
+    #logo{margin:0 auto;}
+    #gnb{display:none;}
+  }
+  #main_view{
+    .inner{height:100vh; max-height:1024px;}
+    h2{right:auto; left:0; text-align:left; 
+      font-size:10vw;}
+  }
+  #side_bar{display:none;}
+}

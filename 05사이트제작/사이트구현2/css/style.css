@@ -9,13 +9,53 @@ li {
   list-style: none;
 }
 
+.font {
+  font-family: "Just Another Hand", cursive;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.img {
+  background: url("../images/img-logo.png") no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 130px;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  box-shadow: 0 -1px rgba(0, 0, 0, 0.1333333333);
+}
+header .title {
+  position: absolute;
+  top: 35px;
+  left: 204px;
+  width: 173px;
+  height: 60px;
+  background-position: 0 -453px;
+}
+header .emblem {
+  position: absolute;
+  top: -70px;
+  left: 15px;
+  width: 176px;
+  height: 196px;
+}
+
 #main_view {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 #main_view .view {
   width: 100%;
   height: 100vh;
+  position: relative;
   background: no-repeat center center/cover;
 }
 #main_view .v1 {
@@ -26,4 +66,85 @@ li {
 }
 #main_view .v3 {
   background-image: url("../images/slide-3.jpg");
+}
+#main_view .view h3 {
+  position: absolute;
+  right: 0;
+  bottom: 200px;
+  font-size: 60px;
+  color: #fff;
+  padding: 12px 10px 4px;
+  background: rgba(0, 0, 0, 0.7333333333);
+  font-weight: normal;
+  transform: translateX(100%);
+  transition: all 0.3s;
+}
+#main_view .view a {
+  position: absolute;
+  right: 0;
+  bottom: 150px;
+  font-size: 26px;
+  color: #fff;
+  padding: 8px 6px 4px;
+  background: #e26d5d;
+  text-decoration: none;
+  transform: translateX(100%);
+  transition: all 0.3s;
+}
+#main_view .view.swiper-slide-active h3 {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+#main_view .view.swiper-slide-active a {
+  transform: translateX(0);
+  transition-delay: 0.5s;
+}
+#main_view .prev, #main_view .next {
+  position: absolute;
+  top: 20px;
+  left: 6%;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.7333333333);
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 0;
+  display: none;
+}
+#main_view .prev svg, #main_view .next svg {
+  width: 10px;
+}
+#main_view .prev path, #main_view .next path {
+  fill: #fff;
+}
+#main_view .prev:hover, #main_view .next:hover {
+  background: #e26d5d;
+}
+#main_view .next {
+  left: calc(6% + 42px);
+}
+#main_view .pager {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  left: auto;
+  bottom: auto;
+  width: auto;
+}
+#main_view .pager span {
+  width: 16px;
+  height: 16px;
+  background: rgba(0, 0, 0, 0.7333333333);
+  margin: 0 0 0 4px;
+  opacity: 1;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.5333333333) inset;
+}
+#main_view .pager .swiper-pagination-bullet-active::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 3px;
+  border-radius: 50%;
+  background: #e26d5d;
 }/*# sourceMappingURL=style.css.map */

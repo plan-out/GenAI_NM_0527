@@ -4,12 +4,67 @@
 *{margin:0; padding:0;}
 li{list-style:none;}
 
+//scss변수선언
+$main1:#e26d5d;
+$main2:#5d9fca;
+$img:url("../images/img-logo.png") no-repeat;
+
+.font{font-family: "Just Another Hand", cursive;
+  text-transform:uppercase; letter-spacing:-0.02em;}
+.img{background:$img; text-indent:-9999px;
+  overflow:hidden;}  
+
+
+header{
+  width:100%; height:130px; background:#fff;
+  position:fixed; left:0; bottom:0; z-index:99;
+  box-shadow:0 -1px #0002;
+  .title{position:absolute; top:35px; left:204px;
+    width:173px; height:60px; 
+    background-position:0 -453px;}
+  .emblem{position:absolute; top:-70px; left:15px;
+    width:176px; height:196px;}    
+}//end:header
 
 #main_view{
-  width:100%; height:100vh;
-  .view{width:100%; height:100vh;
+  width:100%; height:100vh; position:relative;
+  .view{width:100%; height:100vh; position:relative;
     background:no-repeat center center/cover;}
   .v1{background-image:url("../images/slide-1.jpg");}  
   .v2{background-image:url("../images/slide-2.jpg");}  
   .v3{background-image:url("../images/slide-3.jpg");}  
+  .view h3{position:absolute; right:0; bottom:200px;
+    font-size:60px; color:#fff; padding:12px 10px 4px;
+    background:#000b; font-weight:normal;
+    transform:translateX(100%); transition:all .3s;}
+  .view a{position:absolute; right:0; bottom:150px;
+    font-size:26px; color:#fff; padding:8px 6px 4px;
+    background:$main1; text-decoration:none;  
+    transform:translateX(100%); transition:all .3s;}  
+  .view.swiper-slide-active{
+    h3{transform:translateX(0); transition-delay:.3s;}
+    a{transform:translateX(0); transition-delay:.5s;}
+  }
+  .prev, .next{
+    position:absolute; top:20px; left:6%;
+    width:40px; height:40px; background:#000b;
+    transition:all .4s; cursor:pointer; margin:0;
+    display:none;
+    svg{width:10px;}
+    path{fill:#fff;}
+    &:hover{background:$main1;}
+  }
+  .next{left:calc(6% + 42px);} 
+  .pager{
+    position:absolute; top:70px; right:20px; 
+    left:auto; bottom:auto; width:auto;
+    span{width:16px; height:16px; background:#000b;
+      margin:0 0 0 4px; opacity:1;
+      box-shadow:0 1px 1px #fff6,
+                 0 1px 1px #0008 inset;}
+    .swiper-pagination-bullet-active::before{
+      content:""; display:block; width:10px; height:10px;
+      margin:3px; border-radius:50%; background:$main1;
+    }           
+  }
 }//end:#main_view

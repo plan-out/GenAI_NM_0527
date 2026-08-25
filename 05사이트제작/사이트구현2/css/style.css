@@ -9,6 +9,12 @@ li {
   list-style: none;
 }
 
+a {
+  color: inherit; /*부모스타일을 따라간다.*/
+  text-decoration: none;
+  display: inline-block;
+}
+
 .font {
   font-family: "Just Another Hand", cursive;
   text-transform: uppercase;
@@ -45,6 +51,72 @@ header .emblem {
   left: 15px;
   width: 176px;
   height: 196px;
+}
+
+#gnb {
+  float: right;
+  font-size: 22px;
+  line-height: 40px;
+}
+#gnb ul {
+  display: flex;
+}
+#gnb li {
+  padding: 22px 11px 0;
+  border-left: 1px solid #ddd;
+}
+#gnb a {
+  color: #5e5e5e;
+  transition: all 0.3s;
+  border-bottom: 2px solid transparent;
+}
+#gnb a:hover {
+  color: #e26d5d;
+  border-color: #e26d5d;
+}
+#gnb a::before {
+  color: #e26d5d;
+}
+#gnb .sub {
+  position: absolute;
+  bottom: 110px;
+  margin-left: -11px;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.3s;
+  visibility: hidden;
+}
+#gnb .sub li {
+  background: #fff;
+  border: 0;
+  margin-bottom: 1px;
+  padding: 7px 14px 3px;
+}
+#gnb .sub li:first-child {
+  border-radius: 3px 3px 0 0;
+}
+#gnb .sub a {
+  border: 0;
+}
+#gnb li:hover .sub {
+  opacity: 1;
+  bottom: 130px;
+  visibility: visible;
+}
+
+.counter ul {
+  counter-reset: menu;
+}
+.counter { /*menu라는 카운터를 생성함.*/ }
+.counter li {
+  counter-increment: menu;
+}
+.counter { /*li마다 카운터를 1씩 증가함.*/ }
+.counter li a::before {
+  content: "0" counter(menu) " ";
+}
+.counter li li a::before {
+  content: counters(menu, ".") " ";
 }
 
 #main_view {

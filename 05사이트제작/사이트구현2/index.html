@@ -20,6 +20,14 @@
   <header>
     <h1><a href="#" class="img title">Muumilaakso – Tampereen taidemuseos</a></h1>
     <h2><a href="#" class="img emblem"></a></h2>
+    
+    <div class="sns">
+      <ul>
+        <li><a href="#" class="img fb">facebook</a></li>
+        <li><a href="#" class="img tw">twitter</a></li>
+        <li><a href="#" class="img rss">rss</a></li>
+      </ul>
+    </div>
 
     <nav id="gnb" class="font counter">
       <ul>
@@ -49,34 +57,63 @@
         <li><a href="#">Kauppa</a></li>
         <li><a href="#">Yhteystiedot</a></li>
       </ul>
-    </nav>
+    </nav>    
+
+    <div id="lang">
+      <ul>
+        <li><a href="#">en</a></li>
+        <li><a href="#" class="active">fi</a></li>
+        <li><a href="#">ja</a></li>
+        <li><a href="#">ru</a></li>
+        <li><a href="#">sv</a></li>
+      </ul>
+    </div>
   </header>
   
-  <!-- Slider main container -->
-  <div id="main_view" class="swiper font">
-    <!-- Additional required wrapper -->
-    <div class="slider swiper-wrapper">
-      <!-- Slides -->
-      <div class="view v1 swiper-slide">
-        <h3>Muumilaaksosta Muumimuseo!</h3>
-        <a href="#">Siirry Muumimuseon sivulle!</a>
+  <main>
+    <!-- Slider main container -->
+    <section id="main_view" class="swiper font">
+      <!-- Additional required wrapper -->
+      <div class="slider swiper-wrapper">
+        <!-- Slides -->
+        <div class="view v1 swiper-slide">
+          <h3>Muumilaaksosta Muumimuseo!</h3>
+          <a href="#">Siirry Muumimuseon sivulle!</a>
+        </div>
+        <div class="view v2 swiper-slide">
+          <h3>Muumilaakso on sulkeutunut</h3>
+          <a href="#">lue lisää</a><!--ä:alt누른채 0228-->
+        </div>
+        <div class="view v3 swiper-slide">
+          <h3 >Muumilaakson jäähyväiset</h3>
+          <a href="#">29.-30.10.2016</a>
+        </div>
       </div>
-      <div class="view v2 swiper-slide">
-        <h3>Muumilaakso on sulkeutunut</h3>
-        <a href="#">lue lisää</a><!--ä:alt누른채 0228-->
-      </div>
-      <div class="view v3 swiper-slide">
-        <h3 >Muumilaakson jäähyväiset</h3>
-        <a href="#">29.-30.10.2016</a>
-      </div>
-    </div>
-    <!-- If we need pagination -->
-    <div class="pager swiper-pagination"></div>
+      <!-- If we need pagination -->
+      <div class="pager swiper-pagination"></div>
 
-    <!-- If we need navigation buttons -->
-    <div class="prev swiper-button-prev"></div>
-    <div class="next swiper-button-next"></div>
-  </div>
+      <!-- If we need navigation buttons -->
+      <div class="prev swiper-button-prev"></div>
+      <div class="next swiper-button-next"></div>
+    </section>
+
+    <section id="notice">
+      <h3 class="font">Ajankohtaista</h3>
+      <ul>
+        <li><a href="#">Muumilaakso on sulkeutunut!
+          <span>31.10.2016</span></a></li>
+        <li><a href="#">Muumilaakson jäähyväiset 29.-30.10.2016
+          <span>26.10.2016</span></a></li>
+        <li><a href="#">Muumimuseon uudet nettisivut on avattu!
+          <span>30.09.2016</span></a></li>
+        <li><a href="#">Muumimuseon avautuminen siirtyy viikolla
+          <span>27.09.2016</span></a></li>
+      </ul>
+      <p class="gradient-box"></p>
+    </section>
+  </main>
+
+
 
 
   <script>

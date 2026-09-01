@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <!--파비콘-->
+  <link rel="icon" href="./images/favicon.png">
+  <!--외부스타일연결-->
+  <link href="https://cdn.jsdelivr.net/npm/@xpressengine/xeicon@latest/xeicon.min.css" rel="stylesheet">
+  <!--내부스타일연결-->
+  <link rel="stylesheet" href="./fonts/web_fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">My portfolio</h1>
+    <nav id="gnb">
+      <ul class="menu">
+        <li class="btn">main</li>
+        <li class="btn">about</li>
+        <li class="btn">works</li>
+        <li class="btn">contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="wrap">
+    <div class="container">
+      <section id="main" class="section">
+        <p>main(home):사이트에 접속시, 맨 처음 보이는 화면
+          한화면으로 스스로를 표현할 수 있는 내용으로 구성
+          (사진,이미지,슬라이드,동영상,슬로건(문구),효과,...)</p>
+      </section>
+      <section id="about" class="section">
+        <p>about(profile):자신을 소개하는 영역, 개인정보 제외,
+          이력서에 표기되지 않는 내용, 주요내용들을 표기
+          (약력,기술(스킬),성향,취미,관심 - 인포그래픽)</p>
+      </section>
+      <section id="works" class="section">
+        <p>works(portfolio):작업한 프로젝트들을 진열하고, 
+          소개 및 설명(기획)을 첨부하고, 모달윈도우를 통해
+          세부페이지로 연결</p>
+      </section>
+      <section id="contact" class="section">
+        <p>contact : 맨 마지막 영역으로 생략해도 됨.
+          (끝인사, 맺음말, 연락수단(연락처), 방명록, 
+          메일전송화면)</p>
+      </section>
+    </div><!--end:.container-->
+  </main>
+
+  <!--외부스크립트-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!--내부스크립트-->
+  <script src="./js/script.js"></script>
+</body>
+</html>

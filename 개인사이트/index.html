@@ -21,6 +21,7 @@
         <li class="btn">main</li>
         <li class="btn">about</li>
         <li class="btn">works</li>
+        <li class="btn">works2</li>
         <li class="btn">contact</li>
       </ul>
     </nav>
@@ -29,9 +30,24 @@
   <main id="wrap">
     <div class="container">
       <section id="main" class="section">
-        <p>main(home):사이트에 접속시, 맨 처음 보이는 화면
+        <div id="main_bg">
+          <video id="back" autoplay muted playsinline>
+            <source src="./images/bg2.mp4">
+          </video>
+        </div>
+        <div id="main_inner"> 
+          <h2 class="title">
+            <span>생각보다 유능하고,</span>
+            <span>보기보다 섬세합니다.</span>
+          </h2>
+          <div class="sub_line">
+            <p class="sub1">&oplus; Rough outside, precise inside.<br> Crafting visuals that speak for themselves.</p>
+            <p class="sub2">&oplus; Quietly persistent, surprisingly detailed.<br> Welcome to my creative archive.</p>
+          </div>
+        </div>  
+        <!--main(home):사이트에 접속시, 맨 처음 보이는 화면
           한화면으로 스스로를 표현할 수 있는 내용으로 구성
-          (사진,이미지,슬라이드,동영상,슬로건(문구),효과,...)</p>
+          (사진,이미지,슬라이드,동영상,슬로건(문구),효과,...)-->
       </section>
       <section id="about" class="section">
         <p>about(profile):자신을 소개하는 영역, 개인정보 제외,
@@ -39,9 +55,43 @@
           (약력,기술(스킬),성향,취미,관심 - 인포그래픽)</p>
       </section>
       <section id="works" class="section">
-        <p>works(portfolio):작업한 프로젝트들을 진열하고, 
+        <!--works(portfolio):작업한 프로젝트들을 진열하고, 
           소개 및 설명(기획)을 첨부하고, 모달윈도우를 통해
-          세부페이지로 연결</p>
+          세부페이지로 연결-->
+        <div id="works_inner">
+          <ul class="list">
+            <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+            <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+            <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+            <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+            <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+            <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+            <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+          </ul>
+        </div><!--end:#works_inner-->
+      </section>
+      <section id="works2" class="section">
+        <!--works(portfolio):작업한 프로젝트들을 진열하고, 
+          소개 및 설명(기획)을 첨부하고, 모달윈도우를 통해
+          세부페이지로 연결-->
+        <div id="works_inner2">
+          <div class="list_box">
+            <ul class="list">
+              <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+              <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+              <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+            </ul> 
+            <ul class="list">
+              <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+              <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+              <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+            </ul>  
+            <ul class="list">
+              <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+              <li class="item"><div class="thums"><h4>프로젝트썸네일</h4></div></li>
+            </ul>
+          </div>
+        </div><!--end:#works_inner-->
       </section>
       <section id="contact" class="section">
         <p>contact : 맨 마지막 영역으로 생략해도 됨.
@@ -49,6 +99,11 @@
           메일전송화면)</p>
       </section>
     </div><!--end:.container-->
+    <div class="pager"></div>
+    <div class="navi">
+      <div class="prev"><i class="xi-4x xi-caret-up-square-o"></i></div>
+      <div class="next"><i class="xi-4x xi-caret-down-square-o"></i></div>
+    </div>
   </main>
 
   <!--외부스크립트-->

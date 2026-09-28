@@ -165,13 +165,15 @@ header.active{
 
 #press{
   background:#eee; padding-bottom:50px;
-  .title{margin:50px 120px; font-size:20px;}
+  .title{padding:50px 120px; font-size:20px;}
   .title a:hover{text-decoration:underline;}
   .inner{padding:20px 50px; overflow:hidden;}
   .swiper-wrapper{display:flex;}
   .swiper-slide{
     flex-shrink:0;
-    a{background:#fff;}
+    a{background:#fff; transition:all .2s ease-in-out;}
+    a:hover{transform:translateY(-10px);
+      box-shadow:0 20px 30px #aaa;}
     img{width:100%; display:block;}
     h3{padding:10px 15px; font-size:16px;
       font-family:"NanumBareunGothicUltraLight";
@@ -183,4 +185,21 @@ header.active{
 			border:1px solid #222;}
     .more:hover{background:#222; color:#fff;}
   }
+  .pager{
+    padding-top:40px; display:flex; gap:10px;
+    justify-content:center;
+    span{display:block; width:8px; height:8px;
+      border-radius:4px; background:#000; cursor:pointer;
+      opacity:.3;}
+    span[class*="active"]{opacity:1;}  
+  }
 }//e:#press
+
+#partners{
+  padding:100px 0;
+  h2{font-size:20px; line-height:1.1; text-align:center;}
+  ul{max-width:1140px; margin:0 auto; padding:50px 0;
+    display:grid; grid-template-columns:repeat(5, 1fr);}
+  img{width:100%; opacity:.3; transition:all .4s ease-out;}
+  img:hover{opacity:1;}
+}

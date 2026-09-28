@@ -15,7 +15,7 @@ const press_slide = new Swiper('#press .inner', {
   slidesPerView: 5,
   spaceBetween: 30,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".pager",
     clickable: true
   }
 });

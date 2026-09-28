@@ -203,3 +203,19 @@ header.active{
   img{width:100%; opacity:.3; transition:all .4s ease-out;}
   img:hover{opacity:1;}
 }
+
+footer{
+  background:#000; color:#999;
+  .inner{height:150px; padding:50px 120px; display:flex;}
+  #footer_logo{width:30%;}
+  #footer_logo img{width:100px;}
+  .info{
+    width:35%; padding-left:20px; font-style:normal;
+    dt{font-size:20px; margin-bottom:30px;}
+    dd{margin-bottom:5px;}
+  }
+  .copyright{
+    padding:20px 120px; border-top:1px solid #222;
+    p{margin:10px 0; font-size:10px;}
+  }
+}//e:footer

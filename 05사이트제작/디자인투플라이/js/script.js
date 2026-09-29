@@ -1,4 +1,13 @@
 
+const openMenu = document.querySelector('.open_menu');
+const menu = document.querySelector('.menu');
+
+openMenu.addEventListener('click', () => {
+  openMenu.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+
 const main_slide = new Swiper('#main_slide', {
   spaceBetween: 10,
   speed: 600,
@@ -12,8 +21,19 @@ const main_slide = new Swiper('#main_slide', {
 });
 
 const press_slide = new Swiper('#press .inner', {
-  slidesPerView: 5,
-  spaceBetween: 30,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // 화면 너비에 따른 반응형 설정
+  breakpoints: {
+    // 320px 이상
+    320: {slidesPerView: 2, spaceBetween: 20,},
+    // 640px 이상
+    640: {slidesPerView: 3, spaceBetween: 30,},
+    // 768px 이상
+    768: {slidesPerView: 4, spaceBetween: 40,},
+    // 1024px 이상
+    1024: {slidesPerView: 5, spaceBetween: 30,},
+  },
   pagination: {
     el: ".pager",
     clickable: true

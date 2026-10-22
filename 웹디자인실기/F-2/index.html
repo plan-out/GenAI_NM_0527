@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기능대학교</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <h1 id="logo"><a href="#"><img src="./images/logo.png" alt="기능대학교"></a></h1>
+    <nav id="gnb">
+      <ul class="main_menu">
+        <li><a href="#">교육/소개</a>
+          <ul class="sub_menu">
+            <li><a href="#">대학</a></li>
+            <li><a href="#">대학원</a></li>
+            <li><a href="#">대학현황</a></li>
+            <li><a href="#">대학상징</a></li>
+          </ul>
+        </li>
+        <li><a href="#">연구</a>
+          <ul class="sub_menu">
+            <li><a href="#">연구성과</a></li>
+            <li><a href="#">연구현황</a></li>
+            <li><a href="#">연구기관</a></li>
+            <li><a href="#">연구지원</a></li>
+          </ul>
+        </li>
+        <li><a href="#">입학</a>
+          <ul class="sub_menu">
+            <li><a href="#">대학</a></li>
+            <li><a href="#">대학원</a></li>
+            <li><a href="#">편입학</a></li>
+            <li><a href="#">글로벌</a></li>
+          </ul>
+        </li>
+        <li><a href="#">대학생활</a>
+          <ul class="sub_menu">
+            <li><a href="#">뉴스</a></li>
+            <li><a href="#">학생활동</a></li>
+            <li><a href="#">캠퍼스생활</a></li>
+            <li><a href="#">학사행정</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="slide">
+      <ul>
+        <li class="view1"><img src="./images/img1.png" alt="기능대학교의 비전: 전문 인재 양성을 위한 교육"></li>
+        <li class="view2"><img src="./images/img2.png" alt="다양한 전공 소개: 미래를 여는 학문적 탐구"></li>
+        <li class="view3"><img src="./images/img3.png" alt="학생 중심의 캠퍼스 생활: 학습과 성장의 공간"></li>
+      </ul>
+    </section>
+    <div id="contents">
+      <section id="link">
+        <ul>
+          <li><a href="#"><img src="./images/icon1.png" alt=""> 전공안내</a></li>
+          <li><a href="#"><img src="./images/icon2.png" alt=""> 위치안내</a></li>
+          <li><a href="#"><img src="./images/icon3.png" alt=""> 지원 제도</a></li>
+          <li><a href="#"><img src="./images/icon4.png" alt=""> 전화안내</a></li>
+          <li><a href="#"><img src="./images/icon5.png" alt=""> 캠퍼스투어</a></li>
+        </ul>
+      </section>
+      <section id="banner">
+        <p><img src="./images/banner.png" alt=""></p>
+      </section>
+      <div class="board">
+        <section id="notice">
+          <h2>공지사항</h2>
+          <ul>
+            <li><a href="#" class="open_modal">2024년 상반기 건설 프로젝트 개시 안내<span>2024년 06월 01일</span></a></li>
+            <li><a href="#">기능건설 신규 사무소 개소 소식<span>2024년 06월 10일</span></a></li>
+            <li><a href="#">안전 교육 프로그램 일정 공지<span>2024년 06월 15일</span></a></li>
+            <li><a href="#">고객 맞춤형 서비스 확대 안내<span>2024년 06월 20일</span></a></li>
+          </ul>
+        </section>
+        <section id="gallery">
+          <h2>갤러리</h2>
+          <ul>
+            <li><a href="#"><img src="./images/gal1.jpg" alt="">
+              <h3>캠퍼스 생활: 학생들의 하루</h3></a></li>
+            <li><a href="#"><img src="./images/gal2.jpg" alt="">
+              <h3>전공별 프로젝트 전시</h3></a></li>
+            <li><a href="#"><img src="./images/gal3.jpg" alt="">
+              <h3>학교 행사 및 축제 사진첩</h3></a></li>
+          </ul>
+        </section>
+      </div><!--end:.board-->
+    </div>
+  </main>
+
+  <footer>
+    <p class="copyright">COPYRIGHT&copy; by BARUNWEBDESIGN. 
+      ALL RIGHTS RESERVED.</p>
+    <div class="right">
+      <ul class="sns">
+        <li><a href="#"><img src="./images/sns1.jpg" alt="페이스북"></a></li>
+        <li><a href="#"><img src="./images/sns2.jpg" alt="트위터"></a></li>
+        <li><a href="#"><img src="./images/sns3.jpg" alt="인스타그램"></a></li>
+      </ul>
+      <select id="site">
+        <option>패밀리사이트</option>
+        <option>한국대학교육협의회</option>
+        <option>전국대학진학정보센터</option>
+        <option>한국직업능력개발원</option>
+      </select>
+    </div>
+  </footer>
+
+  <div id="modal">
+    <div class="wrap">
+      <div class="inner">
+        <h2>주식회사 기능건설에 오신 것을 환영합니다!</h2>
+        <p>안녕하세요! 기능건설을 방문해 주셔서 감사합니다.<br>
+        우리 회사는 혁신적이고 안전한 건설 솔루션을 제공하여 
+        고객의 기대를 뛰어넘는 결과를 만들어가고 있습니다.<br>
+        새로운 소식과 프로젝트 정보를 확인하고, 고객 맞춤형 
+        서비스를 경험해 보세요!</p>
+        <a class="close_modal">닫기</a>
+      </div><!--end:inner-->
+    </div><!--end:wrap-->
+  </div><!--end:modal-->
+  
+  <script src="./js/jquery-1.12.3.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

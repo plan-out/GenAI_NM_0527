@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영상 박물관</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <h1 id="logo"><a href="#"><img src="./images/logo.png" alt="영상박물관"></a></h1>
+      <nav id="gnb">
+        <ul>
+          <li class="mm"><a href="#">박물관 소개</a>
+            <ul class="sub">
+              <li><a href="#">인사말</a></li>
+              <li><a href="#">박물관연혁</a></li>
+              <li><a href="#">박물관 조직도</a></li>
+              <li><a href="#">오시는 길</a></li>
+            </ul>
+          </li>
+          <li class="mm"><a href="#">전시</a>
+            <ul class="sub">
+              <li><a href="#">전시 리스트</a></li>
+              <li><a href="#">전시일정</a></li>
+              <li><a href="#">특별전</a></li>
+              <li><a href="#">지역작가</a></li>
+            </ul>
+          </li>
+          <li class="mm"><a href="#">체험현장</a>
+            <ul class="sub">
+              <li><a href="#">문화행사</a></li>
+              <li><a href="#">진로체험</a></li>
+              <li><a href="#">명사특강</a></li>
+            </ul>
+          </li>
+          <li class="mm"><a href="#">커뮤니티</a>
+            <ul class="sub">
+              <li><a href="#">사용자메뉴얼</a></li>
+              <li><a href="#">박물관 약도</a></li>
+              <li><a href="#">게시판</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <ul id="lnb">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="contents">
+        <section id="banner">
+          <h2>영상박물관에서 시각 예술의 세계를 탐험하세요!</h2>
+          <p class="text">영상박물관은 영화와 영상 예술의 역사와 발전을 한눈에 볼 수 있는 특별한 공간입니다.<br>
+          다양한 전시와 특별 프로그램을 통해 시각 매체의 매력을 느껴보세요!<br>
+          신규 방문객을 위한 할인 혜택도 마련되어 있으니, 지금 바로 방문해 보세요!</p>
+          <p><img src="./images/banner.png" alt=""></p>
+        </section>
+
+        <section id="notice">
+          <h2><span>공지사항</span></h2>
+          <ul>
+            <li><a href="#" class="popup_btn">2024년 특별 전시회 개막
+              <span>2024년 6월 1일</span></a></li>
+            <li><a href="#">가족 단위 체험 프로그램
+              <span>2024년 6월 5일</span></a></li>
+            <li><a href="#">안전 수칙 안내
+              <span>2024년 6월 10일</span></a></li>
+            <li><a href="#">영상 만들기 체험
+              <span>2024년 6월 15일</span></a></li>
+          </ul>
+        </section>
+
+        <section id="gallery">
+          <h2><span>갤러리</span></h2>
+          <ul>
+            <li><a href="#"><img src="./images/gal1.jpg" alt="">
+              <span>영상박물관 오픈</span></a></li>
+            <li><a href="#"><img src="./images/gal2.jpg" alt="">
+              <span>오래된 영상 모음집</span></a></li>
+          </ul>
+        </section>
+      </div><!--e:contents-->
+      <section id="slide">
+        <ul>
+          <li class="view1">
+            <h3>영상의 역사</h3>
+            <p>시각 매체의 발전 과정</p>
+          </li>
+          <li class="view2">
+            <h3>주요 전시 프로그램</h3>
+            <p>영화와 영상 예술 탐험하기</p>
+          </li>
+          <li class="view3">
+            <h3>관람 안내</h3>
+            <p>특별 상영 및 체험 이벤트</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div><!--e:wrap-->
+
+  <footer>
+    <h1><a href="#"><img src="./images/footer_logo.png" alt="영상박물관"></a></h1>
+    <p>COPYRIGHT&copy; by BARUNWEBDESIGN. ALL RIGHTS RESERVED.</p>
+    <ul class="sns">
+      <li><a href="#"><img src="./images/sns1.jpg" alt=""></a></li>
+      <li><a href="#"><img src="./images/sns2.jpg" alt=""></a></li>
+      <li><a href="#"><img src="./images/sns3.jpg" alt=""></a></li>
+    </ul>
+  </footer>
+
+  <div id="popup">
+    <div class="popup_wrap">
+      <div class="inner">
+        <h2>영상박물관에 오신 것을 환영합니다!</h2>
+        <p>안녕하세요! 영상박물관을 방문해 주셔서 감사합니다.<br>
+        우리 박물관은 다양한 시대의 영상을 체험할 수 있는 
+        특별한 공간입니다.<br>
+        신규 특별 전시회와 다양한 프로그램이 준비되어 있으니,
+        놓치지 마세요!</p>
+        <a class="popup_btn">닫기</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery-1.12.3.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

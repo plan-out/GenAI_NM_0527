@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+*{margin:0; padding:0; box-sizing:border-box;}
+li{list-style:none;}
+img{vertical-align:top;}
+a{color:inherit; text-decoration:inherit;}
+
+:root{
+  font-family:"돋움"; font-size:14px;
+  line-height:1.8; color:#333333;
+  --main:#fdfa36;
+  --sub:#18254b;
+}
+
+header{width:1200px; height:100px; margin:0 auto;
+  display:flex; justify-content:space-between;
+  align-items:center;}
+header #gnb{align-self:flex-end;}
+header #gnb > ul{display:flex;}
+header #gnb .mm{position:relative;}
+header #gnb .mm > a{font-size:20px; font-weight:bold;
+  display:block; width:140px; text-align:center;}
+header #gnb .mm:hover > a{color:var(--main);
+  background:var(--sub);}
+header #gnb .mm .sub{position:absolute; width:100%;
+  background:var(--sub); opacity:0; visibility:hidden;
+  transition:all .6s; z-index:20;}  
+header #gnb .mm:hover .sub{opacity:1; visibility:visible;}
+header #gnb .mm .sub li{text-align:center; font-size:16px;
+  line-height:2.4; color:#fff;}
+header #gnb .mm .sub a:hover{color:var(--main);
+  text-decoration:underline;}
+
+main{width:1200px; height:500px; margin:0 auto;}
+
+#slide{position:relative; height:300px;}
+#slide li{position:absolute; top:0; left:0;}
+#slide li:nth-child(2),
+#slide li:nth-child(3){display:none;}
+
+.contents{padding:10px 0; display:flex; gap:10px;}
+#board{width:640px;}
+#board input{display:none;}
+#board label{display:inline-block; font-size:16px;
+  background:#fff; color:var(--sub); font-weight:bold;
+  padding:0 10px; border-radius:8px 8px 0 0;
+  border:2px solid var(--sub); border-bottom:0;
+  cursor:pointer; height:30px; line-height:26px;}
+#board input:checked + label{background:var(--sub); color:#fff;}  
+#board section{width:100%; height:150px;
+  border:2px solid var(--sub); display:none;}
+#board #tab1:checked ~ #notice,
+#board #tab2:checked ~ #gallery{display:block;}
+#board #notice li{height:37.5px; line-height:37px;
+  border-bottom:1px dashed var(--sub); padding:0 20px;}
+#board #notice li:last-child{border:none;}
+#board #notice li span{float:right;}
+#board #gallery ul{display:flex; justify-content:space-evenly;
+  align-items:center; height:100%;} 
+#board #gallery img{vertical-align:middle; margin-right:10px;}  
+
+footer{width:1200px; height:100px; margin:0 auto;
+  background:#aaa;}
